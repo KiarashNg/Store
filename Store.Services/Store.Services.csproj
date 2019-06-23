@@ -95,6 +95,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906230833498_InitMig.cs" />
+    <Compile Include="Migrations\201906230833498_InitMig.Designer.cs">
+      <DependentUpon>201906230833498_InitMig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +121,11 @@
       <Project>{74458f22-9776-42af-8de2-9bb6e3a9f419}</Project>
       <Name>Store.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201906230833498_InitMig.resx">
+      <DependentUpon>201906230833498_InitMig.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
